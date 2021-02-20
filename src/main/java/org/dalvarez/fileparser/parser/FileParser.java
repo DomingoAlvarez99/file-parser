@@ -5,7 +5,7 @@ import org.dalvarez.fileparser.writer.FileWriter;
 
 import java.util.List;
 
-final public class FileParser {
+public final class FileParser {
     private final FileReader<List<List<String>>> fileReader;
     private final FileWriter fileWriter;
 

@@ -3,7 +3,7 @@ package org.dalvarez.fileparser.summary;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
-final public class ConsoleSummaryPrinter implements SummaryPrinter {
+public final class ConsoleSummaryPrinter implements SummaryPrinter {
     @Override
     public void print(LocalDateTime startDate, String inputFileType, String outputFileType, String inputFile, String outputFile) {
         long seconds = ChronoUnit.SECONDS.between(startDate, LocalDateTime.now());

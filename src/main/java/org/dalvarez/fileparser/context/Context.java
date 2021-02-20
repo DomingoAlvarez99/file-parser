@@ -5,7 +5,7 @@ import org.dalvarez.fileparser.writer.FileWriter;
 
 import java.util.List;
 
-final public class Context {
+public final class Context {
     private FileType inputFileType;
 
     private FileType outputFileType;

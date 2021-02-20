@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
-final public class PlainTextFileWriter implements FileWriter {
+public final class PlainTextFileWriter implements FileWriter {
     private static final String COLUMN_SEPARATOR = ";";
 
     @Override

@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-final public class PlainTextFileReader implements FileReader<List<List<String>>> {
+public final class PlainTextFileReader implements FileReader<List<List<String>>> {
     private static final String COLUMN_SEPARATOR = ";";
 
     @Override

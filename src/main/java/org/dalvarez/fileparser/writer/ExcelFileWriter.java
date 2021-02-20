@@ -10,7 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-final public class ExcelFileWriter implements FileWriter {
+public final class ExcelFileWriter implements FileWriter {
     private static final String WORKSHEET_NAME = "Default";
     private int cellCounter;
     private int rowCounter;

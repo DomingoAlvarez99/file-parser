@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-final public class ExcelFileReader implements FileReader<List<List<String>>> {
+public final class ExcelFileReader implements FileReader<List<List<String>>> {
     private static final int SHEET_INDEX = 0;
 
     @Override

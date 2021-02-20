@@ -7,7 +7,7 @@ import org.dalvarez.fileparser.summary.SummaryPrinter;
 
 import java.time.LocalDateTime;
 
-final public class Main {
+public final class Main {
     public static void main(String[] args) {
         if (args.length < 4) {
             throw new IllegalArgumentException("There must be 4 arguments");
