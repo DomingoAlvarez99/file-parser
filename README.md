@@ -5,14 +5,11 @@
 `Java` `Maven`
 
 ### :gear: Instalación del proyecto
-1. Clonar el repositorio en tu equipo:
+1. Clonar el repositorio:
 ```sh
 > cd <folder path>
 > git clone https://github.com/DomingoAlvarez99/file-parser
 ```
-2. Importar el proyecto mediante **IntelliJ IDEA**
-   1. **Import Project**, y seleccionar la carpeta del proyecto.
-   1. Marcar **Create Project from external model**, elegir **Maven**.  
 
 ### :rocket: Ejecución
 1. Compilar el programa: `> mvn clean compile assembly:single`
