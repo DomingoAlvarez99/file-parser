@@ -1,17 +1,16 @@
 @echo off
 
-set base_project_dir=../../..
-
-set jar_file=%base_project_dir%/target/FileParser-1.0-jar-with-dependencies.jar
+set jar_file=target/FileParser-1.0-jar-with-dependencies.jar
 
 if not exist %jar_file% (
-    call mvn -f %base_project_dir% clean compile assembly:single
+    call mvn clean compile assembly:single
 )
 
+set resources_dir=src/main/resources
 set input_file_type=plain_text
-set input_file=test.csv
+set input_file=%resources_dir%/test.csv
 set output_file_type=excel
-set output_file=testExcelOutput.xlsx
+set output_file=%resources_dir%/testExcelOutput.xlsx
 
 java -jar %jar_file% %input_file_type% %input_file% %output_file_type% %output_file%
 
