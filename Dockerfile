@@ -18,5 +18,3 @@ RUN java -jar app.jar \
     ${INPUT_FILE} \
     ${OUTPUT_FILE_TYPE} \
     ${OUTPUT_FILE}
-
-RUN ls -lh ${OUTPUT_FILE}
