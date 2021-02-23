@@ -6,14 +6,13 @@ COPY src ./src
 RUN mvn clean compile assembly:single
 
 ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
 ARG INPUT_FILE_TYPE
 ARG INPUT_FILE
-COPY ${INPUT_FILE} .
+COPY ${INPUT_FILE} ${INPUT_FILE}
 ARG OUTPUT_FILE_TYPE
 ARG OUTPUT_FILE
 
-RUN java -jar app.jar \
+RUN java -jar ${JAR_FILE} \
     ${INPUT_FILE_TYPE} \
     ${INPUT_FILE} \
     ${OUTPUT_FILE_TYPE} \
